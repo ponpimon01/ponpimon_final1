@@ -8,7 +8,8 @@ export default class Register extends Component{
         this.state = {
             idkey:"",
             firstname:"",
-            lastname:""
+            lastname:"",
+            email:localStorage.getItem("user").email,
         }
         this.handleChang = this.handleChang.bind(this);
         this.handleClicked = this.handleClicked.bind(this);
